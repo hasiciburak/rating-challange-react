@@ -1,0 +1,43 @@
+@use "../../scss/colors" as colors;
+@use "../../scss/sizes" as sizes;
+
+.thank-you-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.thank-you-card-container {
+  @include sizes.cardSize;
+}
+.thank-you-card-container > .illustration-row {
+  margin: 0 auto;
+}
+
+.thank-you-card-container .thank-you-header {
+  justify-content: center;
+  color: white;
+}
+
+.given-score-detail {
+  background-color: colors.$very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 50px;
+  & p {
+    line-height: auto;
+    color: colors.$orange;
+    font-weight: 700;
+  }
+}
+
+.thank-you-description {
+  & p {
+    text-align: center;
+    color: colors.$light-grey;
+  }
+}

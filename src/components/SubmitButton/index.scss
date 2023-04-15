@@ -1,0 +1,23 @@
+@use "../../scss/colors" as colors;
+
+// Variables
+$transition-prop: all 0.15s ease-in-out;
+
+.submit-btn {
+  border: none;
+  background: colors.$orange;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: colors.$white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: $transition-prop;
+}
+
+.submit-btn:hover {
+  color: colors.$orange;
+  background: colors.$white;
+  transition: $transition-prop;
+}
